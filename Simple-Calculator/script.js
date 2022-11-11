@@ -13,5 +13,9 @@ function display(value) {
 function calculate() {
     var p = document.getElementById("result").value;
     var q = eval(p);
+    if (q == 1 / 0){
+        display("Invalid Calculation")
+    }else{
     document.getElementById("result").value = q;
+    }
 }
