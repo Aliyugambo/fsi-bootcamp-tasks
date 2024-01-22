@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Weather Forecast</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-wrap">
+	<input id="toggle" class="toggle" type="checkbox"/>
+	<div class="box-inner">
+	<div class="box">
+		<div class="box-base"></div>
+		<div class="flip front">
+			<!-- <img src="Coat_of_arms_of_Nigeria.svg.png" class="coat" alt=""/> -->
+			<div class="city">
+				<div class="clouds">
+					<div class="cloud cloud-1"><div class="dtl"></div></div>
+					<div class="cloud cloud-2"><div class="dtl"></div></div>
+					<div class="cloud cloud-3"><div class="dtl"></div></div>
+				</div>
+			</div>
+			<img src="flag-waving-250.png" class="coat text-gradient2" alt=""/>
+			<div class="general-info text-gradient">
+				<div class="measure">
+					<div class="notification" id="notification"></div>
+					<span class="numb" id="temperature-value"></span>
+					
+				</div>
+				<div class="status" id="temperature-discription"></div>
+				<div class="city-name" id="location"></div>
+				<div class="current-date" id="current-date"></div>
+			</div>
+		</div>
+		<div class="flip back">
+			<div class="content">
+				<div class="title text-gradient" id="location"></div>
+				<div class="sub-title">Forecast</div>
+				<div class="forecast">
+					<input type="text" id="search" class="search" placeholder="Enter the City" autocomplete="off"/>
+				</div>
+				<div class="location-icon">
+					<img src="download (12).jpg" alt=""/>
+				</div>
+				<div class="author">A Pen by <a href="https://www.github.com/Aliyugambo" target="_blank">@Aliyugambo</a></div>
+			</div>
+		</div>
+	</div>
+	<label for="toggle" class="toggle-switch">
+		<span class="tgl-btn front">
+			<div class="ico"><i class="basethundercloud"></i><i class="icon-thunder icon-sunny"></i></div>
+		</span>
+		<span class="tgl-btn back">
+			<div class="dtl-icon"><i></i></div>
+		</span>
+	</label>
+	</div>
+</div>
+<!-- partial -->
+<script src="app.js"></script>
+</body>
+</html>
